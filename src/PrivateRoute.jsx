@@ -9,10 +9,13 @@ const PrivateRoute = ({ element }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/auth-check/", {
-          method: "GET",
-          credentials: "include",
-        })
+        const response = await fetch(
+          "https://web-production-11c4.up.railway.app/api/auth-check/",
+          {
+            method: "GET",
+            credentials: "include",
+          }
+        )
 
         if (response.ok) {
           setIsAuthenticated(true)
