@@ -45,7 +45,6 @@ const Login = () => {
 
         toast.success("Login successful! Redirecting...", { autoClose: 2000 })
 
-  
         setTimeout(() => {
           const routes = {
             SuperAdmin: "/super-admin-dashboard",

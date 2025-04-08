@@ -9,7 +9,6 @@ import NotFound from "../components/Auth/NotFound"
 import ChangePassword from "../components/Auth/ChangePassword"
 import { useEffect } from "react"
 function App() {
- 
   return (
     <Router>
       <Routes>
